@@ -1,0 +1,156 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/*
+#BA8BD9 lilas
+#DAB6F2 lavanda
+#CFC1D9 cinzinha
+#7553A6 roxo quente
+#5549A6 roxo azul
+*/
+
+
+body {
+    background-color: #fff;
+}
+
+nav, #resume, #projects, .icons, .footer_columns{
+    display: flex;
+    flex-direction: row;
+
+}
+
+nav, footer, #projects, .card_project, .icons{
+    align-items: center;
+}
+
+nav {
+    justify-content: flex-end;
+    margin-bottom: 30px;
+    padding-right: 40px;
+}
+
+nav, footer {
+    width: 100%;
+    height: auto;
+    background: rgb(115,10,19);
+    background: linear-gradient(90deg,  rgba(115,10,19,1) 0%, 
+                                        rgba(150,12,25,1) 50%,
+                                        rgba(203,0,19,1) 100%);
+    box-shadow: 2px 1px 10px rgba(117,83,166,1);
+
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding: 30px;
+}
+
+.item-menu, #Title {
+    color: #fff;
+    margin: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 2px 1px 17px rgba(9,7,11,1);
+    font-size: 25px;
+}
+
+
+.Titulo {
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+p, .Titulo {
+    color: #34020B;
+}
+
+#Title {
+    font-size: 25px;
+    margin-right: 55%;
+}
+
+main {
+    margin: 4%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+#resume {
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 70px;
+}
+
+#text_resume {
+    text-align: justify;
+    margin-left: 40px;
+    width: 550px;
+    font-size: 18px;
+}
+
+#MyPhoto {
+    border-radius: 20px;
+    margin-right: 60px;
+}
+
+#projects {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
+
+.card_project {
+    width: 20%;
+    margin: 20px;
+    padding: 20px;
+    background: rgb(209,122,127);
+    border-radius: 20px;
+    justify-content: center;
+    box-shadow: 2px 1px 17px #d9d9d9
+}
+
+.quadrado {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.icons {
+    justify-content: center;
+}
+
+.icon-footer {
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.footer_columns {
+    justify-content: center;
+    font-size: 11px;
+
+}
+
+.column1, .column2, .column3{
+    margin: 15px;
+    width: 300px;
+}
+
+.item-footer {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
