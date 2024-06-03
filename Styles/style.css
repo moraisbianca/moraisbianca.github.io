@@ -1,156 +1,129 @@
 * {
     margin: 0%;
     padding: 0%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffff;
+}
+
+html {
+    min-height: 100%;
+    min-width: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 4%;
+    background: -webkit-linear-gradient(10deg, #1d0047,#00022e,#00214d);
+    background: linear-gradient(10deg, #1d0047,#00022e,#00214d);
+}
+
+@keyframes star {
+    0%, 100% {
+        transform: scale(0) translate(0);
+    }
+    50% {
+        transform: scale(1.2) translate(-10px);
+    }
+}
+
+@keyframes moveupdown {
+    0% { transform: translateY(0) scale(1); }
+    100% { transform: translateY(-5px) scale(0.95); }
 }
 
 
-/*
-#BA8BD9 lilas
-#DAB6F2 lavanda
-#CFC1D9 cinzinha
-#7553A6 roxo quente
-#5549A6 roxo azul
-*/
+@font-face {
+    font-family: Montserrat-Black;
+    src: url(../Fonts/Montserrat-Black.ttf);
+}
 
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(../Fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../Fonts/Montserrat-Regular.ttf);
+}
 
 body {
-    background-color: #fff;
+    color: aliceblue;
+    font-family: Montserrat-Medium; 
 }
 
-nav, #resume, #projects, .icons, .footer_columns{
+.star {float: left;}
+.star-size-25{height: 25px; width: 25px;}
+.star-size-30{height: 30px; width: 30px;}
+.star-size-50{height: 50px; width: 50px; animation: star 5s ease-in-out infinite;}
+
+.star2{margin-left: 1600px;}
+.star3{margin-top: -200px; margin-left: 650px;}
+.star4{margin-top: -400px;}
+.star6 {
+    height: 70px;
+    width: 70px;
+    margin-left: -700px;
+}
+.star7 {
+    width: 90px;
+    height: 90px;
+    margin-left: 1400px;
+    animation: star 3s ease-in-out infinite;
+}
+.star8 {float: unset; margin-left: 500px;}
+.star9{margin-top: 100px;}
+
+.eu {
+    animation: moveupdown 2s infinite alternate;
+}
+
+span {
+    width: 1000px;
+}
+.nav {
+    list-style: none;
     display: flex;
-    flex-direction: row;
-
-}
-
-nav, footer, #projects, .card_project, .icons{
+    justify-content: space-between;
     align-items: center;
 }
 
-nav {
-    justify-content: flex-end;
-    margin-bottom: 30px;
-    padding-right: 40px;
+.nav-item {
+    font-size: 16px;
+    font-family: Montserrat-Medium;
 }
 
-nav, footer {
-    width: 100%;
-    height: auto;
-    background: rgb(115,10,19);
-    background: linear-gradient(90deg,  rgba(115,10,19,1) 0%, 
-                                        rgba(150,12,25,1) 50%,
-                                        rgba(203,0,19,1) 100%);
-    box-shadow: 2px 1px 10px rgba(117,83,166,1);
-
+.item-active {
+    font-size: 20px;
+    font-weight: bolder;
 }
 
-footer {
-    display: flex;
-    flex-direction: column;
-    color: #fff;
-    padding: 30px;
-}
-
-.item-menu, #Title {
-    color: #fff;
-    margin: 20px;
-    font-weight: bold;
+.nav-link {
     text-decoration: none;
-    text-shadow: 2px 1px 17px rgba(9,7,11,1);
-    font-size: 25px;
 }
 
-
-.Titulo {
-    font-size: 35px;
-    margin-bottom: 20px;
+.nav-link:hover {
     font-weight: bold;
-}
-
-p, .Titulo {
-    color: #34020B;
-}
-
-#Title {
-    font-size: 25px;
-    margin-right: 55%;
+    transition: font-size 500ms linear;
 }
 
 main {
-    margin: 4%;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 5%;
+    padding-bottom: 10%;
 }
 
-#resume {
-    justify-content: center;
-    align-items: flex-start;
-    margin-bottom: 70px;
+.title {
+    font-family: Montserrat-Black;
+    font-size: 55px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+.title2 {
+    font-family: Montserrat-Black;
+    font-size: 40px;
 }
 
-#text_resume {
-    text-align: justify;
-    margin-left: 40px;
-    width: 550px;
-    font-size: 18px;
-}
-
-#MyPhoto {
-    border-radius: 20px;
-    margin-right: 60px;
-}
-
-#projects {
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-left: 20%;
-    margin-right: 20%;
-
-}
-
-.card_project {
-    width: 20%;
-    margin: 20px;
-    padding: 20px;
-    background: rgb(209,122,127);
-    border-radius: 20px;
-    justify-content: center;
-    box-shadow: 2px 1px 17px #d9d9d9
-}
-
-.quadrado {
-    background-color: #fff;
-    border-radius: 15px;
-    width: 100%;
-    height: 100px;
-    margin-bottom: 10px;
-}
-
-.icons {
-    justify-content: center;
-}
-
-.icon-footer {
-    margin-top: 30px;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-.footer_columns {
-    justify-content: center;
-    font-size: 11px;
-
-}
-
-.column1, .column2, .column3{
-    margin: 15px;
-    width: 300px;
-}
-
-.item-footer {
-    color: #fff;
-    text-decoration: none;
+.text {
+    font-family: Montserrat-Regular;
     font-size: 17px;
-    margin-bottom: 20px;
+    letter-spacing: 1px;
 }

@@ -1,0 +1,25 @@
+b {
+    font-family: Montserrat-Medium;
+}
+
+a {
+    text-decoration: none;
+}
+
+.a-formacao:hover {
+    text-shadow: rgb(233, 216, 255) 5px 0 20px;
+}
+
+.graduacao {
+    font-family: Montserrat-Regular; 
+    font-size: 20px;
+    text-indent: 2.5rem;
+    margin-top: 35px;
+}
+
+.graduacao-data {
+    font-family: Montserrat-Regular; 
+    font-size: 15px;
+    text-indent: 2.5rem;
+    margin-top: 5px;
+}

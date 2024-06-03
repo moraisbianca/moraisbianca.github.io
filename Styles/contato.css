@@ -1,0 +1,34 @@
+#mapa {
+    border-radius: 20px;
+    width: 500px;
+    height: 300px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.title2 {
+    text-align: center;
+}
+
+.contato-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    height: fit-content;
+    align-content: center;
+}
+
+.div-row, .div-row-redes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 50px;    
+}
+
+.div-row, .contato-container {justify-content: center;}
+.div-row-redes {justify-content: space-between; margin-left: 35%; margin-right: 35%;}
+
+.text {
+    margin-left: 20px;
+    font-weight: bolder;
+}
