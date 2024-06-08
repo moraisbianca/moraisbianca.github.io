@@ -1,3 +1,7 @@
+html {
+    overflow: auto;
+}
+
 .title2 {
     margin-bottom: 30px;
 }
@@ -17,11 +21,7 @@
     background-color: #ffff;
 }
 
-.item-projects:hover {
-    box-shadow: 0px 0px 35px 10px rgba(255,255,255,0.19);
-    -webkit-box-shadow: 0px 0px 35px 10px rgba(255,255,255,0.19);
-    -moz-box-shadow: 0px 0px 35px 10px rgba(255,255,255,0.19);
-}
+.item-projects:hover {scale: 0.99;}
 
 .container-projects, .item-projects {
     height: auto;
@@ -41,3 +41,18 @@ iframe {
 .title-projects, .description-projects { color: #00022e;}
 .title-projects {font-size: 20px; font-weight: bolder; margin-bottom: 10px; font-family: Montserrat-Medium;}
 .description-projects {font-size: 14px; font-family: Montserrat-Regular;}
+
+.tools-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.tool {
+    width: 40px;
+    height: 40px;
+}
+
+.php, .xamarin {margin-right: 5px;}
