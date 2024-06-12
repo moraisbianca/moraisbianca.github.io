@@ -1,7 +1,9 @@
-html {
-    overflow: auto;
-}
+html {overflow: auto;}
 
+main {
+
+    height: 100%;
+}
 .title2 {
     margin-bottom: 30px;
 }
